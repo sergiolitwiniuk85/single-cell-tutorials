@@ -3,36 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Single Cell Tutorials — Landing Page</title>
+  <title>Single Cell Tutorials</title>
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.6; }
-    h1 { font-size: 28px; margin-bottom: 8px; }
-    .subtitle { color: #555; margin-bottom: 32px; font-size: 16px; }
-    .tutorial { border: 1px solid #ddd; border-radius: 8px; padding: 16px 20px; margin-bottom: 16px; background: #fafafa; }
-    .tutorial h2 { font-size: 18px; margin: 0 0 8px 0; }
-    .tutorial h2 a { color: #0969da; text-decoration: none; }
-    .tutorial h2 a:hover { text-decoration: underline; }
-    .tutorial p { margin: 0 0 8px 0; font-size: 14px; color: #333; }
-    .tutorial .meta { font-size: 12px; color: #666; }
-    .note { margin-top: 32px; padding: 16px; background: #f6f8fa; border-radius: 8px; font-size: 14px; color: #333; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; max-width: 700px; margin: 60px auto; padding: 0 20px; color: #222; line-height: 1.6; }
+    h1 { font-size: 26px; margin-bottom: 8px; }
+    .subtitle { color: #555; margin-bottom: 24px; font-size: 15px; }
+    ul { list-style: none; padding: 0; }
+    li { margin-bottom: 10px; padding: 10px 14px; border: 1px solid #ddd; border-radius: 6px; background: #fafafa; }
+    li a { color: #0969da; text-decoration: none; font-weight: 500; font-size: 15px; }
+    li a:hover { text-decoration: underline; }
+    .empty { color: #666; font-style: italic; }
   </style>
 </head>
 <body>
 
   <h1>Single Cell Tutorials</h1>
-  <p class="subtitle">HTML reports from locally executed single-cell and spatial transcriptomics pipelines.</p>
+  <p class="subtitle">HTML reports from locally executed single-cell pipelines.</p>
 
-  <h2>Index</h2>
+  <h2>Tutorials</h2>
+  <ul id="tutorial-list">
+    <!-- Add new tutorial links here as HTML reports are generated -->
+  </ul>
 
-  <div class="tutorial">
-    <h2><a href="tutorials/scvi_tools_api_overview.html">scvi-tools API Overview</a></h2>
-    <p>A walkthrough of the scvi-tools API covering data loading, model setup, and training for single-cell RNA-seq analysis. The report shows the end-to-end execution of the pipeline directly from a local Jupyter notebook.</p>
-    <div class="meta">File: tutorials/scvi_tools_api_overview.html</div>
-  </div>
-
-  <div class="note">
-    <strong>How this works:</strong> each item above links to a self-contained HTML report generated from a Jupyter notebook run on your local machine. No server or installation is required to view them — just open the file in any browser. New tutorials are added to the <code>tutorials/</code> folder as more local pipeline runs finish.
-  </div>
+  <p class="empty">No tutorials yet. Add your first HTML report to <code>tutorials/</code> and link it above.</p>
 
 </body>
 </html>
